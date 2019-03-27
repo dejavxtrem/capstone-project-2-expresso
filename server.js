@@ -8,7 +8,7 @@ const apiRouter = require("./api/api.js");
 
 const app = express();
 const db = new sqlite3.Database(process.env.TEST_DATABASE || './database.sqlite');
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4000;
 
 
 app.use(morgan("tiny"))
